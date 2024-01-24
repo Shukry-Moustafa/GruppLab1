@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <link rel="icon" href="icon.png">
+  <head>
+    <meta charset="utf-8">
+    <title>Nitrous Maximus beställ bil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="CSS/Audistyle.css">
+  </head>
+  
+ <!--------body-------->
+  <body>
+ 
+    
+ <!--------header------->
+    
+        <header>
+           <a href="startsida.html" ><img class="logo" src="logo.png" alt=""><a>
+            <a href="startsida.html" class="texti"> Nitrous Maximus AB</a>
+    
+<!--------navbar-------->
+    
+            <nav 
+                class="navigation"> 
+                <a href="startsida.html" target="_blank"> startsida </a>
+                <a href="vårabilar.html" target="_blank"> våra bilar </a>
+                <a href="kontaktsida.html" target="_blank"> kontakta oss </a>
+            </nav>
+    
+        </header>
+
+<!--------section-------->        
+
+    <section class="vårabilar" id="vårabilar">
+        <h2 class="titlet">Beställ en Audi A7</h2>
+        <div class="content">
+            <div class="project-card">
+                <div class="project-image">
+                    <img width="700px" src="bilder/audi.jpg" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Audi A7</p>
+                    <strong class="project-title">
+                        <span></span>
+                        <ul>
+                            <li><strong>Modell:</strong> Audi A7</li>
+                            <li><strong>Årsmodell:</strong> 2020</li>
+                            <li><strong>Miltal:</strong> 30 000 miles</li>
+                            <li><strong>Färg:</strong> Svart</li>
+                            <li><strong>Bränsle:</strong> Bensin</li>
+                            <li><strong>Växellåda:</strong> Automatisk</li>
+                            <li><strong>Motor:</strong> V6, 3.0L</li>
+                            <li><strong>Skick:</strong> Utmärkt skick, nyservad</li>
+                            <li><strong>Pris:</strong> 400 000 SEK</li>
+                          </ul>
+                    </strong>
+
+                </div>
+
+                <br>
+                
+                <!--------form genom artikel med en tabell-------->
+
+                <article class="buy">
+                    <form action="#" method="post" id="carOrderForm">
+                        <fieldset>
+                            <legend>Beställning</legend>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="orderDate">Date:</label>
+                                </td>
+                                <td>
+                                    <input type="date" min="2024-01-15" id="orderDate" name="orderDate" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="orderEmail">Email:</label>
+                                </td>
+                                <td>
+                                    <input type="email" id="orderEmail" name="orderEmail" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="orderTel">Tel:</label>
+                                </td>
+                                <td>
+                                    <input type="tel" id="orderTel" name="orderTel" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <input type="submit" value="Beställ" onclick="resetForm()">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </article>
+            </div>
+    </section>
+</body>
+
+
+<!--------footer här-------->
+
+<footer class="footer">
+    <p class="footer-title">Copyrights @ <span>Nitrous Maximus</span></p>
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+</footer>
+
+</html>
